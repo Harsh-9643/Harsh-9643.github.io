@@ -66,21 +66,6 @@
   --glow-purple: rgba(139, 92, 246, 0.25);
 }
 
-/* Light Theme Variables */
-.light-theme {
-  --bg-primary: #f8fafc;
-  --bg-secondary: #ffffff;
-  --bg-card: rgba(255, 255, 255, 0.85);
-  --border-card: rgba(0, 0, 0, 0.08);
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --accent-cyan: #0284c7;
-  --accent-purple: #7c3aed;
-  --accent-emerald: #059669;
-  --accent-rose: #e11d48;
-  --glow-cyan: rgba(2, 132, 199, 0.15);
-  --glow-purple: rgba(124, 58, 237, 0.15);
-}
 
 /* Smooth Scrolling */
 html {
@@ -123,9 +108,6 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-card);
-}
-.light-theme .glass-nav {
-  background: rgba(255, 255, 255, 0.85);
 }
 
 /* Gradient Text Shimmer */
@@ -246,10 +228,6 @@ body {
   border: 1px solid #30363d;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
 }
-.light-theme .terminal-window {
-  background: #1e293b;
-  color: #f1f5f9;
-}
 
 /* Toast Notification */
 #toast {
@@ -308,8 +286,8 @@ body {
           H
         </div>
         <div class="flex flex-col">
-          <span class="font-extrabold text-lg tracking-tight group-hover:text-cyan-400 transition-colors">Harsh<span class="text-cyan-400">.dev</span></span>
-          <span class="text-[10px] text-gray-400 font-mono tracking-widest uppercase">Data & Automation</span>
+          <span class="font-extrabold text-lg tracking-tight group-hover:text-cyan-400 transition-colors">Harsh</span>
+          <span class="text-[10px] text-gray-400 font-mono tracking-widest uppercase">Data</span>
         </div>
       </a>
 
@@ -325,12 +303,8 @@ body {
         <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
       </div>
 
-      <!-- Action Buttons & Theme Toggle -->
+      <!-- Action Buttons -->
       <div class="flex items-center gap-3">
-        <!-- Theme Toggle -->
-        <button id="theme-toggle" type="button" aria-label="Toggle theme" class="w-9 h-9 rounded-lg bg-gray-800/80 border border-gray-700/60 text-gray-300 hover:text-cyan-400 hover:border-cyan-500/50 flex items-center justify-center transition-all cursor-pointer">
-          <i id="theme-icon" class="fa-solid fa-moon text-sm"></i>
-        </button>
 
         <!-- Resume Download CTA -->
         <button onclick="downloadHarshResume(event)" id="nav-resume-btn" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-medium text-sm shadow-md hover:shadow-cyan-500/25 transition-all cursor-pointer">
@@ -590,43 +564,36 @@ body {
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-database text-blue-400 text-base"></i> SQL (MySQL, SQLite)
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-mono">Advanced</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-brands fa-python text-amber-400 text-base"></i> Python (Pandas, EDA)
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-mono">Advanced</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-chart-column text-yellow-400 text-base"></i> Power BI & Dashboards
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 font-mono">Proficient</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
-                <i class="fa-solid fa-file-excel text-emerald-500 text-base"></i> Advanced MS Excel
+                <i class="fa-solid fa-file-excel text-emerald-500 text-base"></i> MS Excel
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-mono">Advanced</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-broom text-cyan-400 text-base"></i> Data Cleaning & Wrangling
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-mono">Expert</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-chart-line text-purple-400 text-base"></i> Data Visualization (Charts)
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-mono">Advanced</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-calculator text-rose-400 text-base"></i> Business Metrics & MIS
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-mono">Advanced</span>
             </div>
           </div>
         </div>
@@ -648,37 +615,26 @@ body {
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-network-wired text-orange-400 text-base"></i> UiPath Studio
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 font-mono">Advanced</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-table-cells text-emerald-400 text-base"></i> Excel Automation
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 font-mono">Advanced</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-code-branch text-indigo-400 text-base"></i> DataTable & Dictionary Logic
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 font-mono">Advanced</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-regular fa-envelope text-sky-400 text-base"></i> Outlook Integration
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 font-mono">Advanced</span>
-            </div>
-            <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
-              <span class="text-sm font-medium flex items-center gap-2.5">
-                <i class="fa-solid fa-gears text-teal-400 text-base"></i> Business Process Mining
-              </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 font-mono">Proficient</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-brain text-pink-400 text-base"></i> Machine Learning Basics
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 font-mono">Proficient</span>
             </div>
           </div>
         </div>
@@ -700,43 +656,36 @@ body {
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-pepper-hot text-red-400 text-base"></i> Flask & SQLAlchemy
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono">Proficient</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-brands fa-bootstrap text-purple-400 text-base"></i> Bootstrap & HTML5/CSS3
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-mono">Advanced</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-brands fa-js text-yellow-300 text-base"></i> JavaScript (ES6+)
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 font-mono">Proficient</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-brands fa-php text-indigo-400 text-base"></i> PHP Basics
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 font-mono">Intermediate</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-brands fa-git-alt text-rose-500 text-base"></i> Git & GitHub
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 font-mono">Proficient</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-cloud-arrow-up text-cyan-400 text-base"></i> Render Cloud Hosting
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono">Proficient</span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-solid fa-file-word text-blue-500 text-base"></i> MS Word & PowerPoint
               </span>
-              <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-mono">Expert</span>
             </div>
           </div>
         </div>
@@ -752,7 +701,7 @@ body {
           <span class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-2 block">Featured Project Spotlight</span>
           <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Live Web Application</h2>
           <p class="text-gray-400 text-sm sm:text-base mt-2 max-w-xl">
-            Verified database-driven healthcare platform built and deployed live on Render by Harsh.
+            Database-driven healthcare platform built and deployed live on Render by Harsh.
           </p>
         </div>
 
@@ -822,7 +771,7 @@ body {
               </div>
               <div class="flex items-start gap-2.5 text-xs sm:text-sm text-gray-300">
                 <i class="fa-solid fa-circle-check text-emerald-400 text-sm mt-0.5 shrink-0"></i>
-                <span>Configured scalable SQLite database models with SQLAlchemy ORM and deployed live on Render.</span>
+                <span>Configured SQLite database models with SQLAlchemy ORM and deployed live on Render.</span>
               </div>
             </div>
 
@@ -1103,7 +1052,7 @@ body {
               </div>
             </div>
             <p class="text-xs text-gray-300 leading-relaxed mb-4">
-              Contains complete academic marks, Centelli & YBI experience, technical proficiencies, and LifeDrop deployment details.
+              Includes my education, Centelli & YBI experience, technical skills, and LifeDrop project details.
             </p>
             <button onclick="downloadHarshResume(event)" class="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-sm flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 transition-all cursor-pointer">
               <i class="fa-solid fa-download"></i>
@@ -1160,7 +1109,7 @@ body {
           H
         </div>
         <div class="text-sm text-gray-400">
-          Designed & Crafted for <span class="text-white font-semibold">Harsh</span> &bull; Delhi, India
+          <span class="text-white font-semibold">Harsh</span> &bull; Delhi, India
         </div>
       </div>
 
@@ -1234,7 +1183,7 @@ body {
             </li>
             <li class="flex items-start gap-2.5 text-sm text-gray-300">
               <i class="fa-solid fa-circle-check text-cyan-400 text-sm mt-0.5 shrink-0"></i>
-              <span>Configured scalable SQLite database models with SQLAlchemy ORM and deployed live on Render.</span>
+              <span>Configured SQLite database models with SQLAlchemy ORM and deployed live on Render.</span>
             </li>
           </ul>
         </div>
@@ -1313,32 +1262,6 @@ body {
       }, 3200);
     }
 
-    // Theme Toggle Handler
-    function initThemeToggle() {
-      const toggleBtn = document.getElementById('theme-toggle');
-      const themeIcon = document.getElementById('theme-icon');
-      if (!toggleBtn || !themeIcon) return;
-
-      const savedTheme = localStorage.getItem('portfolio-theme');
-      if (savedTheme === 'light') {
-        document.body.classList.add('light-theme');
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-      }
-
-      toggleBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const isLight = document.body.classList.toggle('light-theme');
-        if (isLight) {
-          themeIcon.classList.replace('fa-moon', 'fa-sun');
-          localStorage.setItem('portfolio-theme', 'light');
-          showToast('Switched to Light Theme');
-        } else {
-          themeIcon.classList.replace('fa-sun', 'fa-moon');
-          localStorage.setItem('portfolio-theme', 'dark');
-          showToast('Switched to Dark Theme');
-        }
-      });
-    }
 
     // Typewriter Text Handler
     function initTypewriter() {
@@ -1706,7 +1629,6 @@ body {
       initNeuralCanvas();
       initTypewriter();
       initTerminal();
-      initThemeToggle();
       initMobileMenu();
       initCopyEmail();
       initContactForm();
