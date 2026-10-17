@@ -387,6 +387,9 @@ body {
           <a href="https://github.com/Harsh-9643" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="w-11 h-11 rounded-xl glass-panel border border-gray-800 hover:border-cyan-500 hover:text-cyan-400 flex items-center justify-center transition-all hover:scale-110" title="GitHub: Harsh-9643">
             <i class="fa-brands fa-github text-xl"></i>
           </a>
+          <a href="https://www.linkedin.com/in/harshchorotiya/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="w-11 h-11 rounded-xl glass-panel border border-gray-800 hover:border-cyan-500 hover:text-cyan-400 flex items-center justify-center transition-all hover:scale-110" title="LinkedIn: harshchorotiya">
+            <i class="fa-brands fa-linkedin-in text-xl"></i>
+          </a>
           <a href="mailto:harshchorotiya2501@gmail.com" aria-label="Send Email" class="w-11 h-11 rounded-xl glass-panel border border-gray-800 hover:border-cyan-500 hover:text-cyan-400 flex items-center justify-center transition-all hover:scale-110" title="Email: harshchorotiya2501@gmail.com">
             <i class="fa-solid fa-envelope text-xl"></i>
           </a>
@@ -898,6 +901,7 @@ body {
           <button class="terminal-chip px-2.5 py-1 rounded-md bg-white/5 hover:bg-cyan-500/20 text-cyan-400 border border-white/5 transition-all cursor-pointer" data-cmd="projects">projects</button>
           <button class="terminal-chip px-2.5 py-1 rounded-md bg-white/5 hover:bg-purple-500/20 text-purple-400 border border-white/5 transition-all cursor-pointer" data-cmd="exp">exp</button>
           <button class="terminal-chip px-2.5 py-1 rounded-md bg-white/5 hover:bg-purple-500/20 text-purple-400 border border-white/5 transition-all cursor-pointer" data-cmd="edu">edu</button>
+          <button class="terminal-chip px-2.5 py-1 rounded-md bg-white/5 hover:bg-emerald-500/20 text-emerald-400 border border-white/5 transition-all cursor-pointer" data-cmd="superstore">superstore</button>
           <button class="terminal-chip px-2.5 py-1 rounded-md bg-white/5 hover:bg-emerald-500/20 text-emerald-400 border border-white/5 transition-all cursor-pointer" data-cmd="lifedrop">lifedrop</button>
           <button class="terminal-chip px-2.5 py-1 rounded-md bg-white/5 hover:bg-cyan-500/20 text-cyan-400 border border-white/5 transition-all cursor-pointer" data-cmd="contact">contact</button>
           <button class="terminal-chip px-2.5 py-1 rounded-md bg-white/5 hover:bg-red-500/20 text-red-400 border border-white/5 transition-all cursor-pointer" data-cmd="clear">clear</button>
@@ -933,8 +937,8 @@ body {
               <i class="fa-solid fa-building text-xs"></i> Centelli India LLP
             </h4>
             <ul class="space-y-2 text-sm text-gray-300 leading-relaxed mb-4 list-disc list-inside">
-              <li>Built and tested UiPath workflows to automate Excel- and Outlook-based reporting and business processes across teams.</li>
-              <li>Used DataTable and Dictionary-based logic to aggregate, clean, and process data for sales reporting, bonus processing, and leave applications, drastically reducing manual reporting effort.</li>
+              <li>Built and tested UiPath workflows to automate Excel- and Outlook-based reporting and business processes.</li>
+              <li>Used DataTable and Dictionary-based logic to aggregate, clean, and process data for sales reporting, bonus processing, and leave applications, reducing manual reporting effort.</li>
             </ul>
             <div class="flex flex-wrap gap-2">
               <span class="text-xs px-2.5 py-1 rounded-md bg-white/5 text-gray-300 font-mono">UiPath Studio</span>
@@ -959,7 +963,7 @@ body {
             </h4>
             <ul class="space-y-2 text-sm text-gray-300 leading-relaxed mb-4 list-disc list-inside">
               <li>Cleaned datasets and performed exploratory data analysis (EDA) and visualization in Python.</li>
-              <li>Applied basic machine learning concepts and statistical classification on sample datasets.</li>
+              <li>Applied basic machine learning concepts on sample datasets.</li>
             </ul>
             <div class="flex flex-wrap gap-2">
               <span class="text-xs px-2.5 py-1 rounded-md bg-white/5 text-gray-300 font-mono">Python</span>
@@ -1087,6 +1091,13 @@ body {
                   <div class="text-xs font-semibold text-cyan-400 mt-1">@Harsh-9643</div>
                 </div>
                 <i class="fa-brands fa-github text-lg text-white"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/harshchorotiya/" target="_blank" rel="noopener noreferrer" class="col-span-2 p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 text-gray-200 hover:text-white flex items-center justify-between transition-all">
+                <div>
+                  <div class="text-xs text-gray-400 font-mono">LinkedIn</div>
+                  <div class="text-xs font-semibold text-cyan-400 mt-1">linkedin.com/in/harshchorotiya</div>
+                </div>
+                <i class="fa-brands fa-linkedin-in text-lg text-white"></i>
               </a>
             </div>
           </div>
@@ -1448,13 +1459,14 @@ body {
       if (!input || !output) return;
 
       const commands = {
-        help: "Available commands:\n* bio       - Harsh's profile, summary & career objective\n* skills    - Technical proficiencies (SQL, Python, RPA, Web)\n* projects  - Summary of Superstore Sales Analysis & LifeDrop\n* contact   - Phone number, email, and location\n* exp       - Professional experience at Centelli & YBI\n* edu       - Education timeline (BTech, Diploma, Schooling)\n* lifedrop  - Quick link to live LifeDrop application\n* clear     - Clear terminal screen",
+        help: "Available commands:\n* bio       - Harsh's profile, summary & career objective\n* skills    - Technical proficiencies (SQL, Python, RPA, Web)\n* projects  - Summary of Superstore Sales Analysis & LifeDrop\n* superstore - Data analytics project: details & GitHub link\n* contact   - Phone number, email, and location\n* exp       - Professional experience at Centelli & YBI\n* edu       - Education timeline (BTech, Diploma, Schooling)\n* lifedrop  - Quick link to live LifeDrop application\n* clear     - Clear terminal screen",
         bio: "HARSH | Data Analyst, RPA Developer & Full-Stack Web Builder.\nLocation: Madipur, Delhi\nSummary: CSE diploma graduate & BTech student seeking Data Analyst internships. Experienced in SQL, Python (Pandas), UiPath RPA, and Flask web deployment.",
         skills: "* Data & BI: SQL (MySQL, SQLite), MS Excel, Power BI, Data Cleaning & Aggregation\n* Programming: Python (Pandas, NumPy, Matplotlib, Seaborn, EDA, OOP), Machine Learning Fundamentals\n* Automation: UiPath Studio, Excel Automation, DataTable/Dictionary logic, Outlook Integration\n* Web & Tools: Flask, SQLAlchemy, HTML/CSS, JavaScript, Bootstrap, Git, Render",
         projects: "* Superstore Sales Analysis - Python, Pandas, MySQL, SQLAlchemy, Seaborn\nGitHub: https://github.com/Harsh-9643/superstore-sales-analysis\n\n* LifeDrop (Live on Render) - Blood Donor & Emergency Request Platform\nBuilt with Flask, SQLAlchemy, SQLite, Bootstrap, HTML5/CSS3, JavaScript\nLive URL: https://lifedrop-sgbk.onrender.com/\nGitHub: https://github.com/Harsh-9643/lifedrop",
-        contact: "* Email: harshchorotiya2501@gmail.com\n* Phone: +91 9289056036\n* Location: Madipur, Delhi, India\n* GitHub: github.com/Harsh-9643\n* Status: Open to Data Analyst Internships & Software Roles!",
+        contact: "* Email: harshchorotiya2501@gmail.com\n* Phone: +91 9289056036\n* Location: Madipur, Delhi, India\n* GitHub: github.com/Harsh-9643\n* LinkedIn: linkedin.com/in/harshchorotiya\n* Status: Open to Data Analyst Internships & Software Roles!",
         exp: "1. Centelli India LLP - Software Developer Trainee (RPA) [Apr 2026 - Jun 2026]\n2. YBI Foundation - Data Science Intern [Jun 2025 - Jul 2025]",
         edu: "* BTech in CSE - BITS Bhopal (L.E.) [2026 - 2029]\n* Diploma in CSE - Ambedkar DSEU Campus [2023 - 2026]\n* Class XII - CBSE [2022]\n* Class X - CBSE [2020]",
+        superstore: "Superstore Sales Analysis - End-to-End Data Analytics\nTools: Python, Pandas, MySQL, SQLAlchemy, Matplotlib, Seaborn, Jupyter\n* Cleaned and transformed 9,800 sales records in Pandas (missing values, date conversion, Year/Month/Ship Days features)\n* Loaded the data into MySQL and wrote SQL queries (GROUP BY, aggregation) for category, region and product-wise revenue\n* Charts show year-over-year sales growth, December as the peak month, and Technology and the West region as top performers\nGitHub: https://github.com/Harsh-9643/superstore-sales-analysis",
         lifedrop: "LifeDrop Live URL: https://lifedrop-sgbk.onrender.com/\nGitHub Repository: https://github.com/Harsh-9643/lifedrop"
       };
 
