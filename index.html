@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harsh | Data Analyst & Full-Stack Developer</title>
   <meta name="description" content="Personal Portfolio of Harsh - Computer Science & Engineering student, Data Analyst, and Full-Stack Developer. Specialized in SQL, Python (Pandas), UiPath RPA automation, and Flask web applications.">
-  <meta name="keywords" content="Harsh, Harsh Chorotiya, Data Analyst, SQL, MySQL, SQLite, Python, Pandas, UiPath, RPA, Flask, Power BI, Excel Automation, Render, LifeDrop">
+  <meta name="keywords" content="Harsh, Harsh Chorotiya, Data Analyst, SQL, MySQL, SQLite, Python, Pandas, UiPath, RPA, Flask, Power BI, Matplotlib, Seaborn, Excel Automation, Render, LifeDrop, Superstore Sales Analysis">
   <meta name="author" content="Harsh">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#0a0e17">
@@ -567,7 +567,7 @@ body {
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
-                <i class="fa-brands fa-python text-amber-400 text-base"></i> Python (Pandas, EDA)
+                <i class="fa-brands fa-python text-amber-400 text-base"></i> Python (Pandas, Matplotlib, Seaborn)
               </span>
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
@@ -669,11 +669,6 @@ body {
             </div>
             <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
               <span class="text-sm font-medium flex items-center gap-2.5">
-                <i class="fa-brands fa-php text-indigo-400 text-base"></i> PHP Basics
-              </span>
-            </div>
-            <div class="p-3 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between tech-pill">
-              <span class="text-sm font-medium flex items-center gap-2.5">
                 <i class="fa-brands fa-git-alt text-rose-500 text-base"></i> Git & GitHub
               </span>
             </div>
@@ -694,32 +689,88 @@ body {
     </section>
 
 
-    <!-- FEATURED PROJECTS SECTION (LIFEDROP SPOTLIGHT) -->
+    <!-- FEATURED PROJECTS SECTION -->
     <section id="projects" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-        <div>
-          <span class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-2 block">Featured Project Spotlight</span>
-          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Live Web Application</h2>
-          <p class="text-gray-400 text-sm sm:text-base mt-2 max-w-xl">
-            Database-driven healthcare platform built and deployed live on Render by Harsh.
-          </p>
-        </div>
-
-        <div class="flex items-center gap-3">
-          <a href="https://lifedrop-sgbk.onrender.com/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-semibold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-emerald-500/20 transition-all">
-            <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-            <span>Open Live App</span>
-            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-          </a>
-          <a href="https://github.com/Harsh-9643/lifedrop" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl glass-panel border border-white/10 hover:border-white/20 text-gray-200 hover:text-white font-medium text-xs sm:text-sm flex items-center gap-2 transition-all">
-            <i class="fa-brands fa-github text-sm"></i>
-            <span>GitHub Code</span>
-          </a>
-        </div>
+      <div class="mb-12">
+        <span class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-2 block">Featured Projects</span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Data Analytics &amp; Web Projects</h2>
+        <p class="text-gray-400 text-sm sm:text-base mt-2 max-w-xl">
+          An end-to-end sales analysis project and a live database-driven web application.
+        </p>
       </div>
 
-      <!-- LifeDrop Showcase Card -->
+      <!-- Superstore Sales Analysis Card -->
       <div id="projects-container" class="grid grid-cols-1 max-w-4xl mx-auto gap-8">
+        <article class="glass-panel p-7 sm:p-10 rounded-3xl border border-cyan-500/30 card-hover flex flex-col justify-between group shadow-xl">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-5">
+              <span class="text-xs font-mono px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 font-medium">
+                Data Analytics Project
+              </span>
+              <span class="text-xs text-gray-300 font-mono flex items-center gap-2">
+                <i class="fa-brands fa-github"></i>
+                Open Source
+              </span>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4 group-hover:text-cyan-400 transition-colors">
+              Superstore Sales Analysis &mdash; End-to-End Data Analytics
+            </h3>
+
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-6 font-light">
+              End-to-end analysis of retail sales data: cleaned in Pandas, stored in MySQL, queried with SQL and visualized with Seaborn to uncover category, region, product and monthly sales patterns.
+            </p>
+
+            <div class="grid grid-cols-3 gap-3 mb-6 p-4 rounded-2xl bg-white/5 border border-white/10 text-center">
+              <div>
+                <div class="text-xs text-gray-400 font-mono">Records</div>
+                <div class="text-xs sm:text-sm font-semibold text-cyan-400 mt-0.5">9,800 Rows</div>
+              </div>
+              <div>
+                <div class="text-xs text-gray-400 font-mono">Database</div>
+                <div class="text-xs sm:text-sm font-semibold text-white mt-0.5">MySQL</div>
+              </div>
+              <div>
+                <div class="text-xs text-gray-400 font-mono">Visualization</div>
+                <div class="text-xs sm:text-sm font-semibold text-emerald-400 mt-0.5">Seaborn</div>
+              </div>
+            </div>
+
+            <div class="space-y-2.5 mb-6">
+              <div class="flex items-start gap-2.5 text-xs sm:text-sm text-gray-300">
+                <i class="fa-solid fa-circle-check text-cyan-400 text-sm mt-0.5 shrink-0"></i>
+                <span>Cleaned and transformed 9,800 sales records in Pandas (missing values, date conversion, Year/Month/Ship Days features).</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs sm:text-sm text-gray-300">
+                <i class="fa-solid fa-circle-check text-cyan-400 text-sm mt-0.5 shrink-0"></i>
+                <span>Loaded the data into MySQL and wrote SQL queries (GROUP BY, aggregation) for category, region and product-wise revenue.</span>
+              </div>
+              <div class="flex items-start gap-2.5 text-xs sm:text-sm text-gray-300">
+                <i class="fa-solid fa-circle-check text-cyan-400 text-sm mt-0.5 shrink-0"></i>
+                <span>Built Matplotlib/Seaborn charts showing year-over-year sales growth, December as the peak month, and Technology and the West region as top performers.</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-gray-200 font-mono border border-white/10">Python</span>
+              <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-gray-200 font-mono border border-white/10">Pandas</span>
+              <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-gray-200 font-mono border border-white/10">MySQL</span>
+              <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-gray-200 font-mono border border-white/10">SQLAlchemy</span>
+              <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-gray-200 font-mono border border-white/10">Matplotlib</span>
+              <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-gray-200 font-mono border border-white/10">Seaborn</span>
+              <span class="text-xs px-3 py-1 rounded-lg bg-white/5 text-gray-200 font-mono border border-white/10">Jupyter</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-end pt-6 border-t border-white/10 gap-4">
+            <a href="https://github.com/Harsh-9643/superstore-sales-analysis" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold text-xs sm:text-sm flex items-center gap-2 shadow-md transition-all">
+              <i class="fa-brands fa-github text-sm"></i>
+              <span>View on GitHub</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- LifeDrop Showcase Card -->
         <article class="glass-panel p-7 sm:p-10 rounded-3xl border border-emerald-500/30 card-hover flex flex-col justify-between group shadow-xl">
           <div>
             <!-- Header Meta -->
@@ -1397,10 +1448,10 @@ body {
       if (!input || !output) return;
 
       const commands = {
-        help: "Available commands:\n* bio       - Harsh's profile, summary & career objective\n* skills    - Technical proficiencies (SQL, Python, RPA, Web)\n* projects  - Summary of LifeDrop project\n* contact   - Phone number, email, and location\n* exp       - Professional experience at Centelli & YBI\n* edu       - Education timeline (BTech, Diploma, Schooling)\n* lifedrop  - Quick link to live LifeDrop application\n* clear     - Clear terminal screen",
+        help: "Available commands:\n* bio       - Harsh's profile, summary & career objective\n* skills    - Technical proficiencies (SQL, Python, RPA, Web)\n* projects  - Summary of Superstore Sales Analysis & LifeDrop\n* contact   - Phone number, email, and location\n* exp       - Professional experience at Centelli & YBI\n* edu       - Education timeline (BTech, Diploma, Schooling)\n* lifedrop  - Quick link to live LifeDrop application\n* clear     - Clear terminal screen",
         bio: "HARSH | Data Analyst, RPA Developer & Full-Stack Web Builder.\nLocation: Madipur, Delhi\nSummary: CSE diploma graduate & BTech student seeking Data Analyst internships. Experienced in SQL, Python (Pandas), UiPath RPA, and Flask web deployment.",
-        skills: "* Data & BI: SQL (MySQL, SQLite), MS Excel, Power BI, Data Cleaning & Aggregation\n* Programming: Python (Pandas, NumPy, EDA, OOP), Machine Learning Fundamentals\n* Automation: UiPath Studio, Excel Automation, DataTable/Dictionary logic, Outlook Integration\n* Web & Tools: Flask, SQLAlchemy, HTML/CSS, JavaScript, Bootstrap, PHP, Git, Render",
-        projects: "* LifeDrop (Live on Render) - Blood Donor & Emergency Request Platform\nBuilt with Flask, SQLAlchemy, SQLite, Bootstrap, HTML5/CSS3, JavaScript\nLive URL: https://lifedrop-sgbk.onrender.com/\nGitHub: https://github.com/Harsh-9643/lifedrop",
+        skills: "* Data & BI: SQL (MySQL, SQLite), MS Excel, Power BI, Data Cleaning & Aggregation\n* Programming: Python (Pandas, NumPy, Matplotlib, Seaborn, EDA, OOP), Machine Learning Fundamentals\n* Automation: UiPath Studio, Excel Automation, DataTable/Dictionary logic, Outlook Integration\n* Web & Tools: Flask, SQLAlchemy, HTML/CSS, JavaScript, Bootstrap, Git, Render",
+        projects: "* Superstore Sales Analysis - Python, Pandas, MySQL, SQLAlchemy, Seaborn\nGitHub: https://github.com/Harsh-9643/superstore-sales-analysis\n\n* LifeDrop (Live on Render) - Blood Donor & Emergency Request Platform\nBuilt with Flask, SQLAlchemy, SQLite, Bootstrap, HTML5/CSS3, JavaScript\nLive URL: https://lifedrop-sgbk.onrender.com/\nGitHub: https://github.com/Harsh-9643/lifedrop",
         contact: "* Email: harshchorotiya2501@gmail.com\n* Phone: +91 9289056036\n* Location: Madipur, Delhi, India\n* GitHub: github.com/Harsh-9643\n* Status: Open to Data Analyst Internships & Software Roles!",
         exp: "1. Centelli India LLP - Software Developer Trainee (RPA) [Apr 2026 - Jun 2026]\n2. YBI Foundation - Data Science Intern [Jun 2025 - Jul 2025]",
         edu: "* BTech in CSE - BITS Bhopal (L.E.) [2026 - 2029]\n* Diploma in CSE - Ambedkar DSEU Campus [2023 - 2026]\n* Class XII - CBSE [2022]\n* Class X - CBSE [2020]",
